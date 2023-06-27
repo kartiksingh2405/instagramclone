@@ -1,6 +1,6 @@
-package Controller;
+package com.technical.instagramclone.Controller;
 
-import Entity.Users;
+import com.technical.instagramclone.Entity.Users;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @PostMapping("")
-    private boolean submitUser() {
+    private boolean submitUser(@RequestBody Users users) {
         return true;
     }
 
