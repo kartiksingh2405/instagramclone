@@ -1,8 +1,7 @@
 package Controller;
 
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import Entity.Users;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/user")
@@ -13,5 +12,9 @@ public class UserController {
         return true;
     }
 
-    
+    @GetMapping("/{userid}")
+    private Users getUserDetail(@PathVariable("userid") String userId) {
+        return new Users();
+    }
+
 }
