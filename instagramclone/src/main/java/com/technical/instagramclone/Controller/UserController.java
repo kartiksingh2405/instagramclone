@@ -13,15 +13,14 @@ public class UserController {
     UserService userService;
 
     @PostMapping("")
-    private boolean submitUser(@RequestBody Users users) {
-        userService.submitMetaDataOfUser(users);
-        return true;
+    private Users submitUser(@RequestBody Users users) {
+        return userService.submitMetaDataOfUser(users);
+
     }
 
     @GetMapping("/{userid}")
     private Users getUserDetail(@PathVariable("userid") String userId) {
-        userService.displayUserMetaData(userId);
-        return new Users();
+        return userService.displayUserMetaData(userId);
     }
 
 }
