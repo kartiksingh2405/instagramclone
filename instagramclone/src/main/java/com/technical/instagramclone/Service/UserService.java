@@ -12,11 +12,11 @@ public class UserService {
     UserRepo userRepo;
 
     public Users submitMetaDataOfUser(Users user) {
-        return new Users();
+        return userRepo.save(user);
     }
 
     public Users displayUserMetaData(String userid) {
-        return new Users();
+        return userRepo.findByUserId(userid);
     }
 
 }
