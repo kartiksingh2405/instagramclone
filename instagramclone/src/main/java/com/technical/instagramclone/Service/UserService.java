@@ -1,15 +1,19 @@
 package com.technical.instagramclone.Service;
 
+import com.technical.instagramclone.Entity.Users;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
 
-    private Users submitMetaDataOfUser(Users user) {
+
+
+    public Users submitMetaDataOfUser(Users user) {
         return new Users();
     }
 
-    private Users displayUserMetaData(String userid) {
+    public Users displayUserMetaData(String userid) {
         return new Users();
     }
 
