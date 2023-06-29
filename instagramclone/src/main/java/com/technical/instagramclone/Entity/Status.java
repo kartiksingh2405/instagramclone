@@ -3,7 +3,6 @@ package com.technical.instagramclone.Entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
-import org.antlr.v4.runtime.misc.NotNull;
 
 import java.sql.Timestamp;
 
@@ -13,7 +12,7 @@ public class Status {
     @Id
     @GeneratedValue
     private int id;
-    
+
     private String statusId;
     private String userId;
     private String path;
