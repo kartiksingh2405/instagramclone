@@ -1,7 +1,21 @@
 package com.technical.instagramclone.Controller;
 
-import org.springframework.web.bind.annotation.RestController;
+import com.technical.instagramclone.Entity.Status;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 
 @RestController
+@RequestMapping("/status")
 public class StatusController {
+
+    @PostMapping("")
+    private Status submitStatus(@RequestBody Status status) {
+        return new Status();
+    }
+    @GetMapping("")
+    private ArrayList<Status>getAllStatus(){
+        return new ArrayList<Status>();
+    }
+
 }
