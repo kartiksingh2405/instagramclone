@@ -11,11 +11,11 @@ public class StatusController {
 
     @PostMapping("")
     private Status submitStatus(@RequestBody Status status) {
-        return new Status();
+        return statusService.submitDataIntoDB(status);
     }
     @GetMapping("")
     private ArrayList<Status>getAllStatus(){
-        return new ArrayList<Status>();
+        return statusService.retrieveStatus();
     }
 
 }
