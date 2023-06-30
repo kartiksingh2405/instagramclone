@@ -17,9 +17,7 @@ public class UserService {
     }
 
     public Users displayUserMetaData(String userid) {
-        Users users = userRepo.findByUserId(userid);
-        System.out.println(users);
-        return users;
+        return userRepo.findByUserId(userid);
     }
 
 }

@@ -11,5 +11,5 @@ import java.util.ArrayList;
 public interface StatusRepo extends CrudRepository<Status, Integer> {
 
     Status save(Status save);
-    ArrayList<Status>findAll();
+    ArrayList<Status> findAll();
 }
