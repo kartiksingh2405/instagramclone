@@ -23,6 +23,7 @@ public class Post {
 
     private String postId;
     private String userId;
+    private String userName;
     private String postPath;
     private Timestamp timestamp;
     private int likeCount;
