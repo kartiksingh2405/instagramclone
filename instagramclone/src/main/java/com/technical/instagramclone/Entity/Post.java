@@ -19,7 +19,7 @@ public class Post {
 
     @Id
     @GeneratedValue
-    private int Id;
+    private int id;
 
     private String postId;
     private String userId;

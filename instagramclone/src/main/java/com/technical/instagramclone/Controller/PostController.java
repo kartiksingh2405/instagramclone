@@ -19,7 +19,7 @@ public class PostController {
         return postService.submitPostToDataBase(post);
     }
 
-    @GetMapping("/post")
+    @GetMapping("")
     private ArrayList<Post> getAllPost(){
         return postService.retrievePostFromDB();
     }
