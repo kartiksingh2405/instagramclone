@@ -28,5 +28,6 @@ public class Comments {
     private String postId;
     private Timestamp timestamp;
     private String comment;
+    private String userName;
 
 }
