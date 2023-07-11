@@ -1,4 +1,4 @@
-package Entity;
+package com.technical.instagramclone.Entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
