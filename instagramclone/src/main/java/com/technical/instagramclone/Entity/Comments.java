@@ -16,7 +16,7 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 
 
-@Entity(name = "/Comments")
+@Entity(name = "Comments")
 public class Comments {
 
     @Id

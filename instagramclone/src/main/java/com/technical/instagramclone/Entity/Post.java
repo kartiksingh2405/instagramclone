@@ -14,7 +14,7 @@ import java.sql.Timestamp;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(name="Post")
+@Entity(name="post")
 public class Post {
 
     @Id
